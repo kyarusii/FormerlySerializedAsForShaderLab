@@ -1,0 +1,32 @@
+{
+  "name": "kr.seonghwan.shader-almighty",
+  "version": "0.0.1",
+  "displayName": "Shader Almighty",
+  "description": "This package helps to modify properties of materials and shader.",
+  "unity": "2021.1",
+  "unityRelease": "0f1",
+  "documentationUrl": "https://github.com/seonghwan-dev/shader-almighty/wiki",
+  "changelogUrl": "https://github.com/seonghwan-dev/shader-almighty/blob/main/CHANGELOG.md",
+  "licenseUrl": "https://github.com/seonghwan-dev/shader-almighty/blob/main/LICENSE",
+  "licenses": "MIT",
+  "dependencies": {},
+  "author": {
+    "name": "Seonghwan",
+    "email": "seonghwan@pm.me",
+    "url": "https://github.com/seonghwan-dev"
+  },
+  "unity": "2019.3",
+  "homepage": "https://github.com/seonghwan-dev/shader-almighty",
+  "bugs": {
+    "url": "https://github.com/seonghwan-dev/shader-almighty/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:seonghwan-dev/shader-almighty.git"
+  },
+  "license":"MIT",
+  "keywords": [
+    "utility",
+    "unity"
+  ]
+}
