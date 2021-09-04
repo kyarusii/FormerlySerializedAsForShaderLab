@@ -4,6 +4,7 @@ using System.Text;
 using ShaderAlmighty.YAML;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Rendering;
 using YamlDotNet.Serialization;
 
 namespace ShaderAlmighty
@@ -11,36 +12,38 @@ namespace ShaderAlmighty
 	public static class MenuItems
 	{
 		private const string MENU = "Shader/";
-		[MenuItem(MENU + "Test1")]
+
+		// [MenuItem(MENU + "Test1")]
 		private static void TestFunction1()
 		{
 			Object obj = Selection.activeObject;
 			if (obj is Material material)
 			{
-				// string[] properties = material.GetTexturePropertyNames();
-				// foreach (string property in properties)
-				// {
-				//     // Debug.Log(property);
-				// }
-				//
-				// Shader shader = material.shader;
-				// int count = shader.GetPropertyCount();
-				//
-				// for (int i = 0; i < count; i++)
-				// {
-				//     ShaderPropertyType type = shader.GetPropertyType(i);
-				//     string[] attributes = shader.GetPropertyAttributes(i);
-				//
-				//     foreach (string attribute in attributes)
-				//     {
-				//         Debug.Log($"{i} : {attribute}");
-				//     }
-				// }
-                
-				// var path = AssetDatabase.GetAssetPath(material);
+				string[] properties = material.GetTexturePropertyNames();
+				foreach (string property in properties)
+				{
+					Debug.Log(property);
+				}
 
-			} 
-            
+				Shader shader = material.shader;
+				int count = shader.GetPropertyCount();
+
+				for (int i = 0; i < count; i++)
+				{
+					// ShaderPropertyType type = shader.GetPropertyType(i);
+					string[] attributes = shader.GetPropertyAttributes(i);
+
+					foreach (string attribute in attributes)
+					{
+						Debug.Log($"{i} : {attribute}");
+					}
+				}
+			}
+		}
+
+		// [MenuItem(MENU + "Test2")]
+		private static void TestFunction2()
+		{
 			var path = "Assets/Content/C_Materials/Green.mat";
 			var serializer = new DeserializerBuilder()
 				.IgnoreUnmatchedProperties()
@@ -55,12 +58,33 @@ namespace ShaderAlmighty
 
 				sb.AppendLine(lines[i]);
 			}
-            
+
 			var deserialized = serializer.Deserialize<MaterialRoot>(sb.ToString());
-            
+
 			foreach (var key in deserialized.Material.m_SavedProperties.m_TexEnvs)
 			{
 				Debug.Log(key.Keys.FirstOrDefault());
+			}
+		}
+
+		// [MenuItem(MENU + "Print Attributes")]
+		private static void TestFunction3()
+		{
+			Object obj = Selection.activeObject;
+			if (obj is Material material)
+			{
+				Shader shader = material.shader;
+				int count = shader.GetPropertyCount();
+
+				for (int i = 0; i < count; i++)
+				{
+					string[] attributes = shader.GetPropertyAttributes(i);
+
+					foreach (string attribute in attributes)
+					{
+						Debug.Log($"{i} : {attribute}");
+					}
+				}
 			}
 		}
 	}

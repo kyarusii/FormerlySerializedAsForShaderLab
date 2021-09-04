@@ -11,7 +11,7 @@ namespace ShaderAlmighty.YAML
 		public FileObject m_PrefabInstance { get; set; }
 		public FileObject m_PrefabAsset { get; set; }
 		public string m_Name { get; set; }
-		public ShaderObject m_Shader { get; set; }
+		public FileObject m_Shader { get; set; }
 		public object m_ShaderKeywords { get; set; }
 		public long m_LightmapFlags { get; set; }
 		public long m_EnableInstancingVariants { get; set; }
