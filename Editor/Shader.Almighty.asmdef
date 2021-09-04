@@ -1,7 +1,9 @@
 {
     "name": "Shader.Almighty",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:b3f49edfedc855a48aa1a9e5d3cba438"
+    ],
     "includePlatforms": [
         "Editor"
     ],

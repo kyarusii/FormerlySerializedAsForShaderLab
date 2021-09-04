@@ -9,7 +9,9 @@
   "changelogUrl": "https://github.com/seonghwan-dev/shader-almighty/blob/main/CHANGELOG.md",
   "licenseUrl": "https://github.com/seonghwan-dev/shader-almighty/blob/main/LICENSE",
   "licenses": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "aaubry.yaml-dotnet": "11.2.1-a"
+  },
   "author": {
     "name": "Seonghwan",
     "email": "seonghwan@pm.me",
