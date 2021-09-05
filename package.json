@@ -1,6 +1,6 @@
 {
   "name": "kr.seonghwan.shader-almighty",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "displayName": "Shader Almighty",
   "description": "This package helps to modify properties of materials and shader.",
   "unity": "2021.1",
