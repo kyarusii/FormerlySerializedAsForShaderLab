@@ -40,7 +40,7 @@ Shader "Custom/UI/Default"
 ```json
 {
     "dependencies": {
-        "kr.seonghwan.shader-almighty": "0.0.2"
+        "kr.seonghwan.shader-almighty": "0.0.3"
     }
 }
 ```
