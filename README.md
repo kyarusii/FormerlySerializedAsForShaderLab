@@ -20,10 +20,10 @@ Shader "Custom/UI/Default"
 }
 ```
 
+![image](https://user-images.githubusercontent.com/79823287/132132555-04eb2577-7073-47ba-b4b3-840fe26e8bd9.png)
 
 
 `[FormerlySerializedAs(OLD_NAME)]` property can specify what you want to re-serialize the materials on postprocess timing from the callback ' `AssetPostprocessor`'. This works likes [FormerlySerializedAs](https://docs.unity3d.com/ScriptReference/Serialization.FormerlySerializedAsAttribute.html) in MonoScript API. 
-
 
 
 ## TODO
