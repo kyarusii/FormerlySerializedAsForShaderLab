@@ -1,4 +1,6 @@
 # FormerlySerializedAs For ShaderLab  
+blog post : https://seonghwan.tistory.com/122
+
 ## Features  
 
 ### [FormerlySerializedAs()] for shader  
